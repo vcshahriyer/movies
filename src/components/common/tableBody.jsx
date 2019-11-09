@@ -12,6 +12,18 @@ class TableBody extends Component {
 
   render() {
     const { data, columns } = this.props;
+    if (data.length === 0)
+      return (
+        <tbody>
+          <tr>
+            <td colSpan={columns.length}>
+              <h5 className="alert alert-warning text-center" role="alert">
+                There is no movie available.
+              </h5>
+            </td>
+          </tr>
+        </tbody>
+      );
     return (
       <tbody>
         {data.map(item => (
