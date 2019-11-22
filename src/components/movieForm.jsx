@@ -64,7 +64,6 @@ class MovieForm extends Form {
     this.props.history.push("/movies");
 
     //call the server
-    console.log("Submited");
   };
   render() {
     return (

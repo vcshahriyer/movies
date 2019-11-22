@@ -1,14 +1,15 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
+import { toast } from "react-toastify";
+import _ from "lodash";
+import auth from "../services/authService";
 import MoviesTable from "./moviesTable";
 import Pagination from "./common/pagination";
 import Filter from "./common/filter";
 import { paginate } from "../Utility/paginate";
 import { getMovies, deleteMovie } from "../services/movieService";
 import { getGenres } from "../services/genreService";
-import _ from "lodash";
-import { Link } from "react-router-dom";
 import SearchBox from "./searchBox";
-import { toast } from "react-toastify";
 
 class Movies extends Component {
   state = {
@@ -88,7 +89,7 @@ class Movies extends Component {
     const { pageSize, currentPage, sortColumn, searchQuery } = this.state;
 
     const { totalCount, data } = this.getPageData();
-    // if (totalCount === 0) return <p>There are no movies in the database.</p>;
+    const user = auth.getCurrentUser();
     return (
       <React.Fragment>
         <div className="row">
@@ -101,11 +102,13 @@ class Movies extends Component {
           </div>
           <div className="col-sm-9">
             <div className="row mb-3">
-              <div className="col-md-3 col-sm-4">
-                <Link className="btn btn-primary" to="/movies/new">
-                  New Movie
-                </Link>
-              </div>
+              {user && user.isAdmin && (
+                <div className="col-md-3 col-sm-4">
+                  <Link className="btn btn-primary" to="/movies/new">
+                    New Movie
+                  </Link>
+                </div>
+              )}
               <div className="col-md-9 col-sm-8">
                 <p className="">Showing {totalCount} movies in the database.</p>
               </div>
