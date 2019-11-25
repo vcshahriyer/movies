@@ -38,7 +38,7 @@ class MoviesTable extends Component {
     if (user && user.isAdmin) this.columns.push(this.deleteColumn);
   }
   render() {
-    const { movies, onSort, sortColumn, user } = this.props;
+    const { movies, onSort, sortColumn } = this.props;
 
     return (
       <Table
