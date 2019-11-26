@@ -1,11 +1,28 @@
 {
-  "main.css": "static/css/main.52089ec5.css",
-  "main.css.map": "static/css/main.52089ec5.css.map",
-  "main.js": "static/js/main.b78976de.js",
-  "main.js.map": "static/js/main.b78976de.js.map",
-  "static\\media\\fontawesome-webfont.eot": "static/media/fontawesome-webfont.674f50d2.eot",
-  "static\\media\\fontawesome-webfont.svg?v=4.7.0": "static/media/fontawesome-webfont.912ec66d.svg",
-  "static\\media\\fontawesome-webfont.ttf?v=4.7.0": "static/media/fontawesome-webfont.b06871f2.ttf",
-  "static\\media\\fontawesome-webfont.woff2?v=4.7.0": "static/media/fontawesome-webfont.af7ae505.woff2",
-  "static\\media\\fontawesome-webfont.woff?v=4.7.0": "static/media/fontawesome-webfont.fee66e71.woff"
+  "files": {
+    "main.css": "/movies/static/css/main.d9b3b0ee.chunk.css",
+    "main.js": "/movies/static/js/main.9a30673c.chunk.js",
+    "main.js.map": "/movies/static/js/main.9a30673c.chunk.js.map",
+    "runtime-main.js": "/movies/static/js/runtime-main.289f0c0d.js",
+    "runtime-main.js.map": "/movies/static/js/runtime-main.289f0c0d.js.map",
+    "static/css/2.2087ce5f.chunk.css": "/movies/static/css/2.2087ce5f.chunk.css",
+    "static/js/2.93591c83.chunk.js": "/movies/static/js/2.93591c83.chunk.js",
+    "static/js/2.93591c83.chunk.js.map": "/movies/static/js/2.93591c83.chunk.js.map",
+    "index.html": "/movies/index.html",
+    "precache-manifest.a2908a8b8a5d9d500dd7b642aa0f94e1.js": "/movies/precache-manifest.a2908a8b8a5d9d500dd7b642aa0f94e1.js",
+    "service-worker.js": "/movies/service-worker.js",
+    "static/css/2.2087ce5f.chunk.css.map": "/movies/static/css/2.2087ce5f.chunk.css.map",
+    "static/css/main.d9b3b0ee.chunk.css.map": "/movies/static/css/main.d9b3b0ee.chunk.css.map",
+    "static/media/font-awesome.css": "/movies/static/media/fontawesome-webfont.fee66e71.woff",
+    "static/media/images1.jpg": "/movies/static/media/images1.9b1cdc23.jpg",
+    "static/media/images2.jpg": "/movies/static/media/images2.c63bd769.jpg",
+    "static/media/images3.jpg": "/movies/static/media/images3.ff496673.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.289f0c0d.js",
+    "static/css/2.2087ce5f.chunk.css",
+    "static/js/2.93591c83.chunk.js",
+    "static/css/main.d9b3b0ee.chunk.css",
+    "static/js/main.9a30673c.chunk.js"
+  ]
 }
