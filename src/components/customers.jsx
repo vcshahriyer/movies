@@ -10,7 +10,7 @@ const Customers = props => {
             <img
               className="card-img-top"
               src={require(`../assets/customers/${customer.image}`)}
-              alt="Card image cap"
+              alt="Card cap"
             />
             <div className="card-body">
               <h5 class="card-title">{customer.username}</h5>
