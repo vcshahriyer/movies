@@ -1,11 +1,12 @@
 import React from "react";
 import { Link, NavLink } from "react-router-dom";
+import logo from "../Film-icon.png";
 
 const NavBar = ({ user }) => {
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-light">
       <Link className="navbar-brand" to="/">
-        Vidly
+        <img className="logo" src={logo} alt="Movie Logo" />
       </Link>
       <button
         className="navbar-toggler"
