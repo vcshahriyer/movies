@@ -25,7 +25,7 @@ class LoginForm extends Form {
       const { data } = this.state;
       await auth.login(data.username, data.password);
       const { state } = this.props.location;
-      window.location = state ? state.from.pathname : "/";
+      window.location = state ? state.from.pathname : "/movies";
     } catch (ex) {
       if (ex.response && ex.response.status === 400) {
         const errors = { ...this.state.errors };
@@ -36,7 +36,7 @@ class LoginForm extends Form {
   };
 
   render() {
-    if (auth.getCurrentUser()) return <Redirect to="/" />;
+    if (auth.getCurrentUser()) return <Redirect to="/movies" />;
     return (
       <div className="col-6">
         <h1>Login</h1>
