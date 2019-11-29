@@ -104,7 +104,7 @@ class Movies extends Component {
             <div className="row mb-3">
               {user && user.isAdmin && (
                 <div className="col-md-3 col-sm-4">
-                  <Link className="btn btn-primary" to="/movies/new">
+                  <Link className="btn btn-primary" to="/new">
                     New Movie
                   </Link>
                 </div>

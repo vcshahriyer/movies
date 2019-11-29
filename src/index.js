@@ -10,7 +10,7 @@ import "font-awesome/css/font-awesome.css";
 console.log(process.env.REACT_APP_NAME);
 
 ReactDOM.render(
-  <BrowserRouter>
+  <BrowserRouter basename={process.env.PUBLIC_URL}>
     <App />
   </BrowserRouter>,
   document.getElementById("root")
