@@ -32,10 +32,10 @@ class App extends Component {
             <Route path="/login" component={LoginForm}></Route>
             <Route path="/logout" component={Logout}></Route>
             <Route path="/register" component={RegistrationForm}></Route>
-            <ProtectedRoute path="/:id" component={MovieForm} />
             <Route path="/customers" component={Customers}></Route>
             <Route path="/rentals" component={Rentals}></Route>
             <Route path="/not-found" component={NotFound}></Route>
+            <ProtectedRoute path="/:id" component={MovieForm} />
             <Route path="/" exact component={Movies} />
             <Redirect to="/not-found" />
           </Switch>

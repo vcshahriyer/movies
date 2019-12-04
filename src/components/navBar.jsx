@@ -24,7 +24,7 @@ const NavBar = ({ user }) => {
         id="navbarNavAltMarkup"
       >
         <div className="navbar-nav">
-          <NavLink className="nav-item nav-link" to="/">
+          <NavLink className="nav-item nav-link" exact to="/">
             Movies
           </NavLink>
           <NavLink className="nav-item nav-link" to="/customers">
