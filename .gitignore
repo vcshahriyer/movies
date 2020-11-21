@@ -1,2 +1,5 @@
 node_modules/
 build/
+git.py
+gitAutomate.py
+main.py
